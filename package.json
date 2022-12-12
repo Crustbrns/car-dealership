@@ -1,0 +1,19 @@
+{
+  "name": "car-dealership",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crustbrns/car-dealership.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crustbrns/car-dealership/issues"
+  },
+  "homepage": "https://github.com/Crustbrns/car-dealership#readme"
+}
