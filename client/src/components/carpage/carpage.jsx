@@ -24,14 +24,15 @@ const CarPage = function () {
             {item ?
                 <div className={`flex ${classes.container}`}>
                     <div className={classes.image_container}>
-                        <img src={item.url} className={classes.image} />
+                        <img src={item.picture} className={classes.image} />
                     </div>
                     <div className={classes.additional}>
-                        <p>Title: {item.title}</p>
-                        <p>Price: {item.price}</p>
-                        <p className={classes.description}>{item.description}</p>
+                        <p>Модель: {item.model}</p>
+                        <p style={{marginTop: "20px"}} >Цена: {item.price}</p>
+                        <p>Цвет: {item.color}</p>
+                        <p style={{marginTop: "20px"}} className={classes.description}>{item.description}</p>
                     </div>
-                </div> : "Loading"}
+                </div> : ""}
         </div >
     )
 }

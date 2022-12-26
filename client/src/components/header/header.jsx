@@ -106,7 +106,9 @@ const Header = function () {
                                 </NavLink>
                                 <ul className={classes.site_nav}>
                                     <div className={classes.site_nav_content + ' ' + classes.site_nav__primary}>
-                                        <li className={classes.site_nav_content__item}>🚗 Купить машину</li>
+                                        <Link to="/">
+                                            <li className={classes.site_nav_content__item}>🚗 Купить машину</li>
+                                        </Link>
                                         {/* <li className={classes.site_nav_content__item}>🔥 Скидочки</li> */}
                                         <hr className={classes.site_nav_content__separator} />
                                         <li className={classes.site_nav_content__item}>🧺 Продать машину</li>
@@ -140,7 +142,7 @@ const Header = function () {
                                 <ul className={classes.site_nav}>
                                     <div className={classes.site_nav_content + ' ' + classes.site_nav__primary}>
                                         <a href="https://vidi-automarket.com.ua/ua/about-company/vacancy">
-                                        <li className={classes.site_nav_content__item}>🏘️ Компания</li>
+                                            <li className={classes.site_nav_content__item}>🏘️ Компания</li>
                                         </a>
                                         <hr className={classes.site_nav_content__separator} />
                                         <a href="https://vidi-automarket.com.ua/ua/news">
