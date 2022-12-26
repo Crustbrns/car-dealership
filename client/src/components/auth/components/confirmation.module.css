@@ -1,0 +1,201 @@
+.container {
+    width: 460px;
+    background-color: rgb(41, 43, 52);
+    border-radius: 10px;
+    animation: encounter;
+    animation-duration: .3s;
+    padding: 0px;
+    border: 2px solid rgb(27, 28, 31);
+    user-select: none;
+    box-shadow: 0px 6px 36px -4px rgba(0, 0, 0, 0.569);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: codeEncounter;
+    animation-duration: .4s;
+}
+
+.titleText {
+    font-family: 'e-Ukraine-L';
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    color: rgb(251, 251, 251);
+}
+
+.content {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'e-Ukraine-UL';
+    color: #7b7b7d;
+    animation: codeEncounter;
+    animation-duration: .3s;
+}
+
+.content>span {
+    animation: codeEncounter;
+    animation-duration: .3s;
+}
+
+.resend {
+    animation: codeEncounter;
+    text-align: center;
+    font-family: 'e-Ukraine-UL';
+    color: #7b7b7d;
+    animation-duration: .3s;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    background-color: rgb(73, 77, 94);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'e-Ukraine-UL';
+    font-size: 15px;
+    padding: 45px 35px;
+    border-radius: 10px;
+}
+
+.loader>div {
+    margin-top: 10px;
+    transition: .2s ease;
+    text-align: center;
+    animation: codeEncounter;
+    animation-duration: .5s;
+}
+
+.loader>div>p {
+    font-size: 20px;
+    margin: 0;
+    animation: codeEncounter;
+    animation-duration: .6s;
+    font-family: 'e-Ukraine-R';
+}
+
+.loader>div>span {
+    font-size: 15px;
+    animation: codeEncounter;
+    animation-duration: .7s;
+}
+
+.loader>CircularProgress {
+    animation: codeEncounter;
+    animation-duration: .4s;
+}
+
+.success {
+    background-color: #5ab75c;
+    border: 1px solid #28a746;
+    box-shadow: 0px 6px 36px -4px rgba(19, 172, 54, 0.569);
+}
+
+.failure {
+    background-color: #da2739;
+    border: 1px solid #c72636;
+    box-shadow: 0px 6px 36px -4px rgba(194, 23, 23, 0.569);
+}
+
+.button {
+    border: 0;
+    background-color: transparent;
+    color: #7b7b7d;
+    text-decoration: underline;
+    margin-left: 4px;
+}
+
+.code {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0 15px 0;
+}
+
+.codeinput {
+    padding: 0;
+}
+
+.codeinput input:nth-child(0) {
+    animation-duration: 0.1s !important;
+}
+
+.codeinput input:nth-child(1) {
+    animation-duration: 0.2s !important;
+}
+
+.codeinput input:nth-child(2) {
+    animation-duration: 0.3s !important;
+}
+
+.codeinput input:nth-child(3) {
+    animation-duration: 0.4s !important;
+}
+
+.codeinput input:nth-child(4) {
+    animation-duration: 0.5s !important;
+}
+
+.codeinput input:nth-child(5) {
+    animation-duration: 0.6s !important;
+}
+
+.codeinput input:nth-child(6) {
+    animation-duration: 0.7s !important;
+}
+
+@keyframes codeEncounter {
+    from {
+        opacity: 0;
+        transform: translateY(40%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes encounter {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.preload {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preload>div {
+    margin-top: 30px;
+}
+
+.load {
+    color: var(--dark-green-color-text) !important;
+}

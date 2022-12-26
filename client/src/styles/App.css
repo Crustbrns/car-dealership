@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f8f8fb;
+}
+
+a {
+  color: var(--header-link-inactive);
+}
+
+li {
+  text-align: justify;
+}
+
+@font-face {
+  font-family: "Huova-L";
+  src: url("../../public/fonts/Huova-L.otf");
+}
+
+@font-face {
+  font-family: "Closer-L";
+  src: url("../../public/fonts/CloserText-Light.otf");
+}
+
+@font-face {
+  font-family: "Closer-R";
+  src: url("../../public/fonts/CloserText-Regular.otf");
+}
+
+@font-face {
+  font-family: "Closer-M";
+  src: url("../../public/fonts/CloserText-Medium.otf");
+}
+
+@font-face {
+  font-family: "Closer-SB";
+  src: url("../../public/fonts/CloserText-SemiBold.otf");
+}
+
+@font-face {
+  font-family: "Amsi-R";
+  src: url("../../public/fonts/Amsi-R.ttf");
+}
+
+@font-face {
+  font-family: "Amsi-SB";
+  src: url("../../public/fonts/Amsi-SB.ttf");
+}
+
+@font-face {
+  font-family: "e-Ukraine-M";
+  src: url("../../public/fonts/e-Ukraine-M.otf");
+}
+
+@font-face {
+  font-family: "e-Ukraine-R";
+  src: url("../../public/fonts/e-Ukraine-R.otf");
+}
+
+@font-face {
+  font-family: "e-Ukraine-L";
+  src: url("../../public/fonts/e-Ukraine-L.otf");
+}
+
+@font-face {
+  font-family: "e-Ukraine-UL";
+  src: url("../../public/fonts/e-Ukraine-UL.otf");
+}
+
+.flex {
+  display: flex;
+}
+
+.flex_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fullsize {
+  width: 100%;
+}
+
+.content {
+  max-width: 100%;
+  margin: auto;
+}
+
+.body-prevent-scrolling {
+  position: absolute;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  --grey-black: #232323;
+  --main-logo-color: #07f2b7;
+  --header-color: white;
+  /* --background-primary-color: #f8f8fb; */
+  --background-primary-color: #f7f9fd;
+  --link-color: black;
+  --login-active: rgba(0, 0, 0, 0.7);
+  --header-box-shadow: rgb(0, 0, 0, 0.04);
+  --header-border-bottom: rgb(250, 250, 250);
+  --nav-link-hover: #2f3ab2;
+  --close-icon-hover: rgb(202, 63, 63);
+  --redirect-button-color: #0077ff;
+  --main-subtitle-color: #4b4b50;
+  --transparent-color: rgba(0, 0, 0, 0);
+  --header-link-inactive: #9fa1a3;
+  --mobile-button-color: #9e9ea7;
+  --mobile-menu-item-bottom: #e2e2e7;
+  --site-nav-background: #fff;
+  --site-nav-content-item-active: #ea4c89;
+  --site-nav-content-item-hover: #f5f5fb;
+  --site-nav-content-separator: #e6e6ec;
+  --site-nav-before: #fff;
+  --site_nav-box-shadow: rgb(0 0 0 / 10%);
+
+  --min-width: 280px;
+  --mobile-mode-width: 840px;
+}
+
+@media screen and (max-width: 840px) {
+  .content {
+    padding-top: 57px;
+  }
+}

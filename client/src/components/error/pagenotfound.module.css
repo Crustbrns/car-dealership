@@ -1,0 +1,119 @@
+.container {
+    /* background-image: url("../../../images/pagenotfound.jpeg"); */
+    width: 100%;
+    height: calc(90vh);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* filter:brightness(0%); */
+    padding: 10px;
+    font-family: 'e-Ukraine-UL';
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.image {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    border-radius: 10px;
+    animation: encounter;
+    animation-duration: .4s;
+}
+
+.caution {
+    margin-top: 20px;
+    padding: 0 10px;
+    animation: encounter;
+    animation-duration: .6s;
+}
+
+.caution>p {
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #e4002b;
+    margin-bottom: 4px;
+    font-family: 'e-Ukraine-M';
+    animation: encounter;
+    animation-duration: .8s;
+}
+
+.caution>span {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    animation: encounter;
+    animation-duration: .6s;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 20px 50px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    transition: .3s ease;
+    word-wrap: break-word;
+    animation: encounter;
+    animation-duration: .8s;
+}
+
+.button:hover {
+    background-color: rgb(76, 75, 81);
+    transition: .3s ease;
+}
+
+.button:hover::after {
+    content: "  →";
+    transition: .3s ease;
+    animation: slidein 1s ease;
+}
+
+@keyframes encounter {
+    from{
+        opacity: 0;
+        transform: translateY(5%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .image {
+        /* width: 100%; */
+        border-radius: 0;
+        max-width: 840px;
+    }
+
+    .container {
+        padding: 0;
+        height: auto;
+    }
+
+    .caution {
+        margin-top: 30px;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+}
+
+
+@keyframes slidein {
+    from {
+        margin-left: -20%;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 0%;
+        opacity: 1;
+    }
+}

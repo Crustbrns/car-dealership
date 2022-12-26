@@ -1,0 +1,36 @@
+.item-exit-active {
+    opacity: 0;
+    text-decoration: line-through;
+    animation: hide;
+    animation-duration: .7s;
+    transition: opacity 700ms ease-out;
+}
+
+.item-enter-active {
+    opacity: 1;
+    animation: encounter;
+    animation-duration: .3s;
+    transition: opacity 700ms ease-out;
+}
+
+@keyframes hide {
+    from {
+        transform: translateX(0);
+        color: rgb(94, 200, 126);
+    }
+
+    to {
+        transform: translateX(-3%);
+        color: rgb(94, 200, 126);
+    }
+}
+
+@keyframes encounter {
+    from {
+        transform: translateY(40%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

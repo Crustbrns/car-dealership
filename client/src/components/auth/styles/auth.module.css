@@ -1,0 +1,179 @@
+.container {
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    font-family: 'e-Ukraine-L';
+}
+
+.holder {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+
+.holder>h1 {
+    font-size: 28px;
+    font-family: 'e-Ukraine-R';
+    animation: encounter;
+    animation-duration: 0.2s;
+}
+
+.holder>h3 {
+    font-size: 14px;
+    font-family: 'e-Ukraine-UL';
+    color: rgb(159, 159, 159);
+    margin-bottom: 50px;
+    animation: encounter;
+    animation-duration: 0.3s;
+}
+
+.holder>h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'e-Ukraine-R';
+    color: rgb(159, 158, 171);
+    margin-bottom: 20px;
+    animation: encounter;
+    animation-duration: 0.1s;
+}
+
+.fields {
+    margin-top: 20px;
+    width: 500px;
+}
+
+.fields input {
+    width: 100%;
+    animation: encounter;
+}
+
+.fields input:nth-child(1) {
+    animation-duration: 0.2s;
+}
+
+.fields input:nth-child(2) {
+    animation-duration: 0.2s;
+}
+
+.fields input:nth-child(3) {
+    animation-duration: 0.3s;
+}
+
+.fields input:nth-child(4) {
+    animation-duration: 0.4s;
+}
+
+.fields input:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.field {}
+
+.name {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.name input:nth-child(2) {
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
+.holder input {
+    /* margin: 10px; */
+    padding: 15px 20px;
+    background-color: rgb(225, 228, 239);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: .5s;
+}
+
+.holder input:focus {
+    outline: none;
+}
+
+.errors {
+    list-style: disc !important;
+    list-style-type: disc !important;
+    font-family: 'e-Ukraine-UL';
+    font-size: 13px;
+}
+
+.errors>li {
+    color: rgb(239, 32, 84);
+    padding-bottom: 2px;
+    list-style: disc !important;
+    list-style-type: disc !important;
+    /* animation: encounter;
+    animation-duration: 0.3s; */
+}
+
+.holder input::placeholder {
+    color: rgb(126, 128, 135);
+    font-size: 14px;
+}
+
+.disappear {
+    text-decoration: line-through;
+    animation: hide !important;
+    animation-duration: .8s !important;
+}
+
+.holder>button {
+    margin-top: 50px;
+    padding: 15px 25px;
+    user-select: none;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(57, 194, 109);
+    transition: .2s ease;
+    animation: encounter;
+    animation-duration: 0.4s;
+}
+
+.holder>button:hover {
+    color: rgb(225, 225, 225);
+    background-color: rgb(18, 119, 57);
+    transition: .2s ease;
+    transform: scale(0.98);
+    box-shadow: 0px 6px 36px -4px rgba(0, 255, 72, 0.059);
+}
+
+.holder>button.restricted {
+    background-color: rgb(54, 54, 55);
+    color: rgb(141, 141, 141);
+    cursor: default;
+    pointer-events: none;
+}
+
+.error {
+    border: 1px solid rgb(239, 32, 84) !important;
+    transition: .4s;
+}
+
+@keyframes encounter {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-4%);
+    }
+}

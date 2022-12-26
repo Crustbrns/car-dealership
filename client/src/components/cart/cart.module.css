@@ -1,0 +1,10 @@
+.test{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vm;
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+    
+}
