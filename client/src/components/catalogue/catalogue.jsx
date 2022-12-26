@@ -23,14 +23,18 @@ const Catalogue = function () {
             </div>
         } else if (cars == null || cars?.length <= 0) {
             return <div>
-                <div>There is no cars</div>
+                {/* <div>There is no cars</div> */}
             </div>
         }
         else return <div className={classes.content__container}>
             {cars?.map((car, index) => {
                 return <div className={classes.content + ' ' + classes.content_active} style={{ animationDuration: `${calcTime(index)}` }} key={car._id}>
-                    <img src={car.picture} style={{}}/>
-                    <h2>{car.model} {car.price} · {car.description}</h2>
+                    <Link to={"/cars/"+car._id}>
+                        <img src={car.picture} style={{ objectFit: "cover", width: "110%", paddingBottom: "5px" }} />
+                        <h2 style={{ padding: "10px" }}>{car.model}</h2>
+                        <h2 style={{ padding: "10px" }}>{car.price} гривен</h2>
+                        <h4 style={{ padding: "10px" }}>{car.description}</h4>
+                    </Link>
                 </div>
             })}
         </div>

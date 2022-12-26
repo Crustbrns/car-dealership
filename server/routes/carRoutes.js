@@ -22,6 +22,12 @@ async function CarRoutes(app) {
         await car.save();
         res.json(car);
     })
+
+    app.get("/api/cars/:_id", async (req, res) => {
+        const car = await Car.findById(req.params._id);
+        res.json({ car: car });
+        
+    })
 }
 
 module.exports = {

@@ -14,6 +14,7 @@ import AdminOverview from './components/admin/overview/admin-overview';
 import PageNotFound from './components/error/pagenotfound';
 import Registration from './components/auth/registration';
 import Login from './components/auth/login';
+import CarPage from './components/carpage/carpage';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Routes>
             <Route>
               <Route path="/" element={<Catalogue />} />
+              <Route path="/cars/:_id" element={<CarPage />} />
               <Route path="/about" element={<About />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/contact" element={<Contact />} />
