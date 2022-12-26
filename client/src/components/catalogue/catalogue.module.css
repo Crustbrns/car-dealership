@@ -1,5 +1,54 @@
-.test_class{
+.test_class {
     text-align: center;
     font-size: 16px;
     font-family: 'e-Ukraine-L';
+}
+
+.content {
+    animation: moveAcross ease;
+    font-size: 14px;
+    font-family: 'e-Ukraine-UL';
+    font-weight: 100;
+    transition: .1s ease;
+    width: 22%;
+    margin: 1.5% 1.5%;
+    border-radius: 5px;
+    background-color: white;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.27));
+}
+
+.content__container {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 50px;
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content:hover {
+    background-color: red;
+    transition: .1s ease;
+    cursor: pointer;
+}
+
+* {
+    overflow-x: hidden !important;
+}
+
+@keyframes moveAcross {
+    0% {
+        opacity: 0;
+        transform: scale(.8);
+    }
+
+    60% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

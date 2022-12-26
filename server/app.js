@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors')
 
 const { CarRoutes } = require('./routes/carRoutes');
 
@@ -11,6 +12,7 @@ app.use(
         type: ["application/json", "text/plain"],
     })
 );
+app.use(cors());
 
 async function start() {
     try {
@@ -26,8 +28,8 @@ async function start() {
     catch (e) {
         console.log(e.message);
     }
+
+    await CarRoutes(app);
 }
 
 start();
-
-CarRoutes(app);
