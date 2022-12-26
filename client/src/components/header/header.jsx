@@ -156,13 +156,13 @@ const Header = function () {
 
                             <li className={classes.nav_item + ' ' + classes.nav_link}>
                                 <NavLink to="/delivery" className={({ isActive }) => isActive ? classes.nav_item__active : '' + ' ' + classes.nav_link_additional} end>
-                                    <span><span className={classes.nav_item_icon}>📦</span>Delivery</span>
+                                    <span><span className={classes.nav_item_icon}>📦</span>Услуги</span>
                                 </NavLink>
                                 <ul className={classes.site_nav}>
                                     <div className={classes.site_nav_content + ' ' + classes.site_nav__primary}>
-                                        <li className={classes.site_nav_content__item}>🛎️ Information</li>
+                                        <li className={classes.site_nav_content__item}>🛎️ Кредитование</li>
                                         <hr className={classes.site_nav_content__separator} />
-                                        <li className={classes.site_nav_content__item}>⏲️ Terms of delivery</li>
+                                        <li className={classes.site_nav_content__item}>⏲️ Страховка</li>
                                     </div>
                                 </ul>
                             </li>
