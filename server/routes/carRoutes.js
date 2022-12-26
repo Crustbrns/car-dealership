@@ -5,6 +5,21 @@ async function CarRoutes(app) {
         let cars = Car.find({});
         console.log(cars);
     })
+
+    app.post('/api/cars/addcar', async (req, res) => {
+        const { model, color, price, picture, description} = req.body;
+
+        let car = new Car({
+            model: model,
+            color: color,
+            price: price,
+            picture: picture,
+            description: description
+        })
+
+        await car.save();
+        res.json(car);
+    })
 }
 
 module.exports = {
